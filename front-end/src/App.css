@@ -1,0 +1,94 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+  background-color: #34495e; /* Midnight blue background */
+  padding: 5px; /* Reduced padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ecf0f1; /* Light gray text color */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.2em; /* Reduced font size */
+  color: #e74c3c; /* Red logo color */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.items {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 10px; /* Reduced margin */
+  cursor: pointer;
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #3498db; /* Blue color on hover */
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+/* Align the logo to the left and items to the right */
+.logo-container {
+  margin-right: auto;
+}
+
+/* Add a subtle animation effect to the navigation bar */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the navigation bar */
+.navbar {
+  animation: fadeIn 0.5s ease;
+}
+
+/* Add responsive design */
+@media only screen and (max-width: 600px) {
+  .items {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+/* Use a professional font for the logo and nav items */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Additional styles for a clean and professional look */
+.navbar {
+  border-bottom: 2px solid #2c3e50; /* Darker border at the bottom */
+}
+
+.nav-item {
+  font-weight: bold;
+}
